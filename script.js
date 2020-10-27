@@ -12,7 +12,10 @@ $(".logo").on("click",function(){
 
         location.reload(true);
 });
-
+var x = document.getElementByClassName("arrow");
+    var y = document.getElementByClassName("everything");
+    x.onclick = function(){y.style.display = "block";
+    };
 
 //LANDING PAGE STUFF //
 
