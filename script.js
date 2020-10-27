@@ -207,4 +207,4 @@ $(".pl4").mouseenter(function(){
       $(this).autoplay = true;
 });
     
-};
+});
