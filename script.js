@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 $("#v1").hide();
 $("#pl3").hide();
 $("#pl4").hide();
@@ -10,7 +12,10 @@ $(".logo").on("click",function(){
 
         location.reload(true);
 });
-
+var x = document.getElementByClassName("arrow");
+    var y = document.getElementByClassName("everything");
+    x.onclick = function(){y.style.display = "block";
+    };
 
 //LANDING PAGE STUFF //
 
@@ -201,3 +206,5 @@ $(".pl4").mouseenter(function(){
    $(this).trigger("play");
       $(this).autoplay = true;
 });
+    
+};
