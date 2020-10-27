@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 $("#v1").hide();
 $("#pl3").hide();
 $("#pl4").hide();
@@ -201,3 +203,5 @@ $(".pl4").mouseenter(function(){
    $(this).trigger("play");
       $(this).autoplay = true;
 });
+    
+};
