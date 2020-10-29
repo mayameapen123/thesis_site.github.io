@@ -65,7 +65,7 @@ p {
 
   background-color: #black;
   position: fixed;
-  margin-top:10%;
+  padding-top:5%;
   right:-20px;
   height: 100%;
   overflow: auto;
@@ -74,7 +74,7 @@ p {
 }
 
 .sidebar a {
-
+  cursor: pointer;
   display: block;
   color: white;
 
@@ -241,7 +241,9 @@ p span{
 }
 
 */
-
+.spacer2{
+	height: 100px;
+}
 
 #v0{
 	position: fixed;
@@ -251,7 +253,7 @@ p span{
 	z-index: 0;
 }
 
-#v1, #v3 , #v4{
+#v1, #v3 , #v4 , #v5{
 	position: fixed;
 	top:0;
 	right:0;

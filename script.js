@@ -67,6 +67,7 @@ window.addEventListener("scroll", (event) => {
     //Food hides, coffee shows
     if(scroll>800){
        $("#v0").hide();
+        $("#v0").trigger("pause");
        $("#v1").show();
        $("#v1").trigger("play");
        $("#v1").autoplay = true;
@@ -132,26 +133,26 @@ window.addEventListener("scroll", (event) => {
           
     }
 
-    if(scroll>5600){
+    if(scroll>6100){
 
-   
+      $("#v5").show();
+       $("#v5").trigger("play");
+       $("#v5").autoplay = true;
   //    $("#a7").css("opacity","1");
       $(".pl3").trigger("pause");
    //   $("#a6").css("opacity","0.5");
  
     }
-     //Hides sidebar for final section
-    if(scroll>6000){
 
- //   $("#a3").css("opacity","0.5");
- //   $("#a6").css("opacity","1");
-    $(".sidebar").hide();
+  if(scroll<6100 || scroll > 7200){
+
+      $("#v5").hide();
+        $("#v5").trigger("pause");
  
     }
 
-    if(scroll>1 & scroll<6000)
-        $(".sidebar").show();
 
+     //Hides sidebar for final section
 
 //POSITION TRAACKINGG (TIME)
 
@@ -207,7 +208,7 @@ else {
 }
 
 //Badminton (4pm)
-if(scroll>5800){
+if(scroll>5800 & scroll <6100){
   $("#a7").css("opacity","1");
 }
 
@@ -215,6 +216,14 @@ else {
    $("#a7").css("opacity","0.5");
 }
 
+//bedtime 
+if(scroll>6100){
+  $("#a8").css("opacity","1");
+}
+
+else {
+   $("#a8").css("opacity","0.5");
+}
 
 });
 
@@ -268,6 +277,10 @@ $("#a7").on("click",function(){
 gsap.to(window, {duration: 2, scrollTo: 5801});
 });
 
+//Scroll to outdoor time
+$("#a8").on("click",function(){
+gsap.to(window, {duration: 2, scrollTo: 6101});
+});
 
 
 $("video").on("mouseenter",function(){
