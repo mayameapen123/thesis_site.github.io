@@ -32,7 +32,7 @@ $(".arrow").on("click",function(){
   $(".heading_text").hide();
   $(".sidebar").fadeIn(3000);
   $(".everything").fadeIn(2000);
-  $("#v0").fadeIn(2000);
+
 });
 
 
@@ -287,6 +287,8 @@ $("video").on("mouseenter",function(){
 $(this).trigger("play");
        $(this).autoplay = true;
 });
+
+
 
 
 
